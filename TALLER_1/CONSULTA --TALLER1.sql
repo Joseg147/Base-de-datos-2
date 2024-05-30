@@ -1,4 +1,4 @@
-
+-- ESTAN COMENTADOS PARA QUE LOS PRUEBE 1 A 1
 #SELECT * FROM Juegos;
 
 #SELECT * FROM Desarrolladores;
