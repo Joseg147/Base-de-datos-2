@@ -1,0 +1,29 @@
+CREATE TABLE orden(
+id INT NOT NULL PRIMARY KEY
+);
+
+
+CREATE TABLE order_line(
+id INT NOT NULL PRIMARY KEY,
+quantity INT NOT NULL
+);
+
+
+CREATE TABLE product(
+id INT NOT NULL PRIMARY KEY,
+nombre VARCHAR (50) NOT NULL,
+precio DECIMAL(10,2) NOT NULL
+);
+
+CREATE TABLE categoria(
+nombre VARCHAR(50) NOT NULL PRIMARY KEY
+);
+
+CREATE TABLE food(
+dia_de_expiracion DATE NOT NULL PRIMARY KEY,
+calorias VARCHAR (50) NOT NULL
+);
+
+CREATE TABLE furniture(
+dia_de_manufactura DATE NOT NULL PRIMARY KEY
+);
