@@ -8,7 +8,7 @@ CREATE TABLE usuario(
  Ciudad VARCHAR(50) NOT NULL,
  Sexo VARCHAR(25) NOT NULL,
  Estado_civil VARCHAR(25) NOT NULL,
- Tipo_empresa VARCHAR(25) NOT NULL,     #cambiar a boolean
+ Tipo_empresa VARCHAR(25) NOT NULL,     
  Dirreccion VARCHAR(100) NOT NULL
 );
 
