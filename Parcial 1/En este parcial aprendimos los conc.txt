@@ -1,1 +1,1 @@
-En este parcial aprendimos los conceptos como el ddl y dml también el uso de vistas y usar la base de datos mediante cmd 
+En este parcial aprendimos los conceptos como el ddl y dml también el uso de vistas y usar la base de datos mediante cmd y a la vez la implementacion del docker
