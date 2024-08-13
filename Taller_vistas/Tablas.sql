@@ -1,0 +1,32 @@
+CREATE TABLE Proveedores(
+ID INT PRIMARY KEY AUTO_INCREMENT,
+Nombre VARCHAR(150),
+Status INT,
+Ciudad VARCHAR(50)
+);
+
+CREATE TABLE Partes(
+Numero_Parte INT PRIMARY KEY,
+Nombre VARCHAR(50),
+Color VARCHAR (50),
+Peso DECIMAL(5,2),
+Precio DECIMAL(10,2),
+Ciudad VARCHAR(100)
+);
+
+CREATE TABLE Proyectos(
+ID INT PRIMARY KEY AUTO_INCREMENT,
+Nombre VARCHAR(100),
+Ciudad VARCHAR(100)
+);
+
+CREATE TABLE Taller(
+ID INT PRIMARY KEY AUTO_INCREMENT,
+Proveedor_ID INT,
+Parte_ID INT,
+Proyecto_ID INT,
+Cantidad INT,
+FOREIGN KEY (Proveedor_ID) REFERENCES Proveedores(ID),
+FOREIGN KEY (Parte_ID) REFERENCES Partes(Numero_parte),
+FOREIGN KEY (Proyecto_ID) REFERENCES Proyectos(ID)
+);
